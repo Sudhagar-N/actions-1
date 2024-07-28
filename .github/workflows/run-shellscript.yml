@@ -1,0 +1,16 @@
+name: Generate Ascii Artwork shell script
+
+on: push
+
+jobs:
+    ascii_job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Repo
+              uses: actions/checkout@v4
+              
+            - name: List repo 
+              run: ls -ltar
+
+            - name: execute Cowsay shell script 
+              run: ./cowsay-script.sh
