@@ -13,4 +13,7 @@ jobs:
               run: ls -ltar
 
             - name: execute Cowsay shell script 
-              run: ./cowsay-script.sh
+              run: |
+                chmod +x
+                ./cowsay-script.sh
+                ls -ltar 
