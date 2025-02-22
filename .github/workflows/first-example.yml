@@ -9,6 +9,9 @@ jobs:
             - name: Run ls
               run: ls -ltar
 
+            - name: Checkout
+              uses: actions/checkout@v4.2.2
+
             - name: Welcome Message
               run: |
                echo "Myfirst github actions job"
